@@ -1,19 +1,15 @@
 <?php
 
-require_once "src/Classes/Cliente.php";
+require_once "src/Cliente.php";
 
 $cli = new Cliente;
-$cli->nome = "João";
-$cli->idade = 40;
-$cli ->endereco = "Rua A, 123";
-$cli ->telefone = "(41) 99999-9999";
-$cli ->comprar();
+$cli ->definirNome("Nala");
 echo "<br>";
-
-$cli2 = new Cliente;
-$cli2 ->definirNome("Maria");
-$cli2 ->idade = 30;
-$cli2 ->endereco = "Rua B, 456";
-$cli2 ->telefone = "(41) 88888-8888";
-$cli2 ->comprar();
+$cli ->definirIdade("30");
+echo "<br>";
+$cli ->definirEndereco ("Rua B, 456");
+echo "<br>";
+$cli ->definirTelefone("(41) 88888-8888");
+echo "<br>";
+$cli ->comprar();
   
